@@ -2,11 +2,14 @@ package HelloWorld;
 
 public class Main {
     public static void main(String[] args) {
-        HelloWorldEn hello = new HelloWorldEn();
-        callMethod(hello);
+        Hello En = new HelloWorldEn();
+        Hello Kr = new HelloWorldKr();
+
+        callMethod(En);
+        callMethod(Kr);
     }
 
-    public static void callMethod(HelloWorldEn he){
-        he.sayHello();
+    public static void callMethod(Hello he){
+        he.sayHi();
     }
 }
