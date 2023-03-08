@@ -1,3 +1,5 @@
+package Strong_Weak_DI;
+
 import java.util.Date;
 
 public class Strong_Weak_DI {
@@ -11,9 +13,9 @@ public class Strong_Weak_DI {
         System.out.println("date2:"+d2);
     }
 
-    public static void MemberUse1(){
-        Member m1 = new Member(); //강한 결합
-    }
+//    public static void MemberUse1(){
+//        Member m1 = new Member(); //강한 결합
+//    }
     public static void MemberUse2(Member m){
         Member m2 = m; //약한 결합 //느슨하다
     }
@@ -24,3 +26,4 @@ class Member{
     String nickName;
     private Member(){}; //생성자를 private으로하면 강한 결합에서만 오류 발생
 }
+
